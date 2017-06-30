@@ -21,7 +21,7 @@ public interface API {
 
     @POST("/NumberString/insertNumberString.php")
     @FormUrlEncoded
-    Call<NumberString> insertSomeT(
+    Call<NumberString> insertNumberString(
             @Field(NumberStringTable.NumberString.COLUMN_NAME_NUMBER) Integer number,
             @Field(NumberStringTable.NumberString.COLUMN_NAME_TEXT) String text
     );

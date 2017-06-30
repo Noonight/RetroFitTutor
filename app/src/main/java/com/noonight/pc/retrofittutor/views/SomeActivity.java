@@ -41,7 +41,7 @@ public class SomeActivity extends AppCompatActivity {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String str = preferences.getString("main_address_key", "");
-        Toast.makeText(this, "prefer str address: " + str, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "from: " + str, Toast.LENGTH_SHORT).show();
 
         ServiceGenerator.changeApiBaseUrl(str);
 
